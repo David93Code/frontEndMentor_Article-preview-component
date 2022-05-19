@@ -1,0 +1,226 @@
+body {
+    background-color: hsl(210, 46%, 95%);
+}
+
+.container {
+    border: 1px solid white;
+    background-color: white;
+    box-shadow: 10px 10px 1px 10px 10px hsl(217, 19%, 35%);
+    border-radius: 5px;
+    height: 95vh;
+   margin-top: 2rem;
+   margin-left: auto;
+   margin-right: auto;
+   min-width: 360px;
+   max-width: 370px;
+}
+
+.drawers {
+    height: 40vh;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.text {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+}
+
+.michelle-pic {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: -3rem;
+}
+
+.michelle-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+height: 4rem;   
+padding-bottom: 1rem;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    /* border: 1px solid red; */
+}
+
+.michelle-name {
+    font-size: small;
+}
+.share-icon {
+    border: 1px solid hsl(210, 46%, 95%);
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: .5rem;
+    width: 1rem;
+    height: 1rem;
+}
+
+.share-icon:hover {
+    padding: .6rem;
+}
+
+.share-div {
+    visibility: hidden;
+    position: relative;
+    top: -80px;
+    height: 5rem;
+    border: 1px solid hsl(217, 19%, 35%);
+    background-color: hsl(217, 19%, 35%);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.share-div h2 {
+    margin-right: 1rem;
+    font-size: medium;
+    color: hsl(214, 17%, 51%);
+    margin-right: -6.5rem;
+
+}
+
+.social-icons img {
+    margin-right: 1rem;
+
+}
+
+.social-icons {
+    height: 3rem;
+    padding-top: 2rem;
+    margin-left: 3rem;
+}
+
+
+
+
+
+
+ .social-icons a img:hover {
+   position: relative;
+   bottom: 5px;
+   
+}
+
+
+
+.share-div-share-button {
+    border: 1px solid hsl(210, 46%, 95%);
+    background-color: hsl(210, 46%, 95%);
+    border-radius: 50%;
+    padding: .5rem;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 2rem;
+}
+
+.share-div-share-button:hover {
+    padding: .6rem;
+}
+
+#second-hidden-div {
+    visibility: hidden;
+    position: relative;
+    top: -8.5rem;
+    left: 5.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 60px;
+    background: hsl(217, 19%, 35%);
+    border-radius: 10px;
+    position: relative;
+    font-size: x-small;
+    
+}
+
+#second-hidden-div h2 {
+      padding-left: 1rem;
+      color: hsl(214, 17%, 51%);
+}
+
+#second-hidden-div .share-div-share-button {
+      margin-right: 1rem;
+}
+
+.tip {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 2rem;
+    bottom: -20px;
+    border: solid 10px;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+}
+
+.social-icons-2 {
+    margin-left: 1rem;
+}
+
+.social-icons-2 img {
+   margin-right: .5rem;
+}
+
+@media all and (min-width:800px) {
+    .container {
+         max-width: 800px;
+         display: flex;
+         height: 50vh;
+         margin-top: 10rem;
+    } 
+    .drawers {
+        height: 100.7%;
+        border-bottom-left-radius: 5px;
+        border-top-right-radius: 0px;
+        margin-top: -1px;
+        margin-left: -1px;
+        /* margin-bottom: -1px; */
+    }
+    .all-text-flex {
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        margin-bottom: .3rem;
+    }
+    .michelle-info {
+        height: 15%;
+    }
+    #hidden-id {
+        display: none;
+    }
+
+   
+
+
+}
+
+@media all and (max-width:800px) {
+    #second-hidden-div {
+        display: none;
+    }
+}
+
+@media all and (min-width:810px) {
+    #second-hidden-div {
+        left: 6rem;
+    }
+}
+
+@media all and (min-width:920px) {
+    #second-hidden-div {
+        left: 10rem;
+ }
+ .tip {
+     right: 5.5rem;
+ }
+}
